@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-test
+  namespace: test
+spec:
+  containers:
+    - name: pod-test
+      image: nginx
+      ports:
+       - containerPort: 8083
